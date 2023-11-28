@@ -6,7 +6,7 @@
 
 const { merge } = require('webpack-merge');
 
-const buildConfig = require('./build.config');
+const buildConfig = require('./common.config');
 
 module.exports = merge(buildConfig, {
   mode: 'production'

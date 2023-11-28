@@ -1,4 +1,4 @@
-const button = document.createElement('button');
-button.innerText = "Test";
+import "./index.css";
 
-document.body.appendChild(button);
+// document.querySelector("[data-webOnly]");
+// document.querySelector("[data-pdfOnly]");

@@ -1,6 +1,6 @@
-import './tech-name.scss';
+import './tag.scss';
 
-class CVTechNameComponent extends HTMLElement {
+class CVTagComponent extends HTMLElement {
     constructor() {
         super();
 
@@ -16,4 +16,4 @@ class CVTechNameComponent extends HTMLElement {
     }
 }
 
-customElements.define('cv-tech-name', CVTechNameComponent);
+customElements.define('cv-tag', CVTagComponent);

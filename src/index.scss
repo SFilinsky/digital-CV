@@ -99,6 +99,7 @@ main {
 .personal-info {
 
     padding: 0;
+    margin-bottom: 1rem;
 
     & > div {
         display: flex;
@@ -167,8 +168,6 @@ a {
 
 
 @media (min-width: $min-pc-width) {
-
-
 
     section.summary {
         max-width: 50%;

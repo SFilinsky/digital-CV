@@ -1,20 +1,27 @@
 # Digital CV
 
-This is CV project of Siarhei Filinski ([Linked In](https://www.linkedin.com/in/sergey-filinsky/)).
+This is CV project of Siarhei Filinski ([Linked In](https://www.linkedin.com/in/sergey-filinsky/)). The idea behind it is:
+- make it possible to create CV using my frontend skills
+- scale CV into my personal website while sharing common elements between them
+- briefly showcase my skills through source code for this small project
+
+## Features 
 
 The tool allows to build and host my CV as website, while also rendering PDF version.
 
-The tool is based on:
+The tech tool is based on:
 - Typescript
 - SCSS
 - Webpack for local and production build
   - Supports hot reload for dev server
 - Puppeteer (for rendering PDF)
 - Web components for few UI elements used widely in CV
+- Node.js scripts for build pipeline
 
-All the build scripts and configs are written by me from scratch.
+All the build scripts and configs are written by me from scratch, 
+no template was used for this project.
 
-Web version is also aimed to support mobile version.
+Web version is also aimed to responsively support mobile.
 
 ## Running
 

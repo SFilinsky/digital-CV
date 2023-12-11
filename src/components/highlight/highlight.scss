@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+cv-highlight {
+    font-family: var(--header-font-family);
+    font-weight: bold;
+    font-size: 1rem;
+
+    color: color-mix(in hsl, $headings-gradient-color-start 20%, $headings-gradient-color-end);
+
+    @media screen {
+        background: linear-gradient(to right bottom in hsl, $headings-gradient-color-start -20%, $headings-gradient-color-end 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

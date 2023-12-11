@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+cv-tech-name {
+    font-family: var(--header-font-family);
+    border-radius: 4px;
+    padding: 0 0.5em;
+    height: 1rem;
+    font-size: 0.85rem;
+    font-weight: 550;
+
+    color: $tech-name-color;
+    background: color-mix(in hsl, $tech-name-background-color 50%, $tech-name-background-color-end);
+
+    @media screen {
+        background: linear-gradient(to right bottom in hsl, $tech-name-background-color 20%, $tech-name-background-color-end 150%);
+
+        span {
+            background: linear-gradient(to right bottom in hsl, $tech-name-color 50%, $tech-name-color-end 150%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

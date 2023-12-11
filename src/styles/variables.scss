@@ -1,0 +1,51 @@
+@import 'pallete3.scss';
+
+/*
+  Workaround for correct syntax highlighting.
+
+  SCSS variables are processed correctly in gradients, while CSS variables cause issues in Idea 2023.2.5.
+ */
+$text-color: var(--text-color);
+
+$link-color: var(--link-color);
+$link-hover-color: var(--link-hover-color);
+$link-active-color: var(--link-active-color);
+$link-visited-color: var(--link-visited-color);
+
+
+$headings-gradient-color-start: var(--headings-gradient-color-start);
+$headings-gradient-color-end: var(--headings-gradient-color-end);
+$headings-personal-info-color: var(--headings-personal-info-color);
+$background-gradient-color-start: var(--background-gradient-color-start);
+$background-gradient-color-end: var(--background-gradient-color-end);
+
+$tech-name-color: var(--tech-name-color);
+$tech-name-color-end: var(--tech-name-color-end);
+$tech-name-background-color: var(--tech-name-background-color);
+$tech-name-background-color-end: var(--tech-name-background-color-end);
+
+:root {
+    --main-font-family: Montserrat, Arial, Helvetica, sans-serif;
+    --header-font-family: Hind, Arial, Helvetica, sans-serif;
+
+
+    --headings-gradient-color-start: #{$color-700};
+    --headings-gradient-color-end: #{$color-500};
+
+    --headings-personal-info-color: #{$color-600};
+
+    --background-gradient-color-start: #{$color-50};
+    --background-gradient-color-end: #{$color-200};
+
+    --text-color: #{$color-500};
+
+    --link-color: #{$color-400};
+    --link-hover-color: lighten(#{$color-400}, 20%);
+    --link-active-color: lighten(#{$color-400}, 20%);
+    --link-visited-color: #{$color-400};
+
+    --tech-name-color: #{$color-400};
+    --tech-name-color-end: #{$color-300};
+    --tech-name-background-color: #{$color-100};
+    --tech-name-background-color-end: #{$color-50};
+}

@@ -1,6 +1,8 @@
 const { spawn} = require('node:child_process');
 const path = require('path');
 
+process.env.NODE_ENV = 'development';
+
 let generatePDFProcess;
 
 function generatePDF() {

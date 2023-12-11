@@ -1,2 +1,5 @@
 /dist
 /node_modules
+
+**/*.module.scss.d.ts
+**/*.module.css.d.ts

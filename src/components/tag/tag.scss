@@ -11,6 +11,10 @@ cv-tag {
     color: $tech-name-color;
     background: color-mix(in hsl, $tech-name-background-color 50%, $tech-name-background-color-end);
 
+    & > span {
+        white-space: nowrap;
+    }
+
     @media screen {
         background: linear-gradient(to right bottom in hsl, $tech-name-background-color 20%, $tech-name-background-color-end 150%);
 

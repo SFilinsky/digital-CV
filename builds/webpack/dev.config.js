@@ -11,6 +11,10 @@ const buildConfig = require('./common.config');
 
 const PROJECT_ROOT = path.join(__dirname, '../../');
 
+console.log(
+  path.join(PROJECT_ROOT, 'src/**/*'),
+  path.join(PROJECT_ROOT, 'builds/puppeteer/'));
+
 module.exports = merge(buildConfig, {
   mode: 'development',
   devtool: 'source-map',
@@ -24,7 +28,7 @@ module.exports = merge(buildConfig, {
     watchFiles: {
       paths: [
         path.join(PROJECT_ROOT, 'src/**/*'),
-        path.join(PROJECT_ROOT, 'builds/puppeteer/**/*')
+        path.join(PROJECT_ROOT, 'builds/puppeteer/**/*.js')
       ]
     }
   },

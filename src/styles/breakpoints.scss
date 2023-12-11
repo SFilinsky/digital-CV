@@ -1,3 +1,4 @@
 $min-width: 360px;
 $min-pc-width: 1024px;
-$max-width: 1240px;
+$max-width: 1240px; // Also should be updated in `builds/puppeteer/generate-pdf.js`.
+

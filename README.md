@@ -1,4 +1,4 @@
-# Digital CV
+# Digital CV Tool
 
 You can see hosted version here - https://sfilinsky.github.io/digital-CV/
 

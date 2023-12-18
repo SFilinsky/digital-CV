@@ -1,6 +1,6 @@
 # Digital CV Tool
 
-You can see hosted version here - https://sfilinsky.github.io/digital-CV/
+You can see hosted version here - https://sfilinsky.github.io/digital-CV-tool/
 
 This is CV project of Siarhei Filinski ([Linked In](https://www.linkedin.com/in/sergey-filinsky/)). The idea behind it is:
 - make it possible to create CV using my frontend skills

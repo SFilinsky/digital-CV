@@ -1,0 +1,24 @@
+name: Auto Merge Main to Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  merge-main-to-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
+
+      - name: Merge main into release
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git fetch origin
+          git checkout release
+          git merge --no-ff origin/main -m "Merging main into release"
+          git push origin release

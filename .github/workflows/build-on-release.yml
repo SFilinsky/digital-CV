@@ -33,3 +33,6 @@ jobs:
           git add -A
           git commit -m "Automated build commit" || echo "No changes to commit"
           git push origin release
+
+  call-release-build-workflow:
+    uses: ./.github/workflows/build-on-release.yml

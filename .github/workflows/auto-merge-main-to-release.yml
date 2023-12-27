@@ -1,7 +1,9 @@
 name: Auto Merge Main to Release
 
 on:
-  workflow_call
+  push:
+    branches:
+      - main
 
 jobs:
   merge-main-to-release:
@@ -20,3 +22,6 @@ jobs:
           git checkout release
           git merge -s ours origin/main -m "Updating release using latest master"
           git push origin release
+
+  call-release-build-workflow:
+    uses: ./.github/workflows/build-on-release.yml

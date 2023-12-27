@@ -21,6 +21,12 @@ jobs:
       - name: Install dependencies
         run: sudo yarn install
 
+      - name: Grant permissions
+        run: |
+          chmod -R a+rwx builds/scripts/tools.js
+          chmod -R a+rwx builds/scripts/dev.js
+          chmod -R a+rwx builds/scripts/prod.js
+
       - name: Build project
         run: sudo yarn build
 

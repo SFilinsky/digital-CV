@@ -22,8 +22,6 @@ const verifyVariantStructure = (dir, name) =>
 
 function extractCvVariants() {
 
-  console.log('Variant list dir:', VARIANTS_PATH);
-
   const variantList = getVariantNamesList(VARIANTS_PATH);
 
   variantList.forEach(variantName => {

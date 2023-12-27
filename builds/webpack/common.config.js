@@ -8,10 +8,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
-const isDevelopment = process.env.NODE_ENV === 'development';
-
 module.exports = async (env) => {
 
+  const isDevelopment = process.env.NODE_ENV === 'development';
   const variantName = env.variant;
 
   console.log("Dev mode:", isDevelopment);

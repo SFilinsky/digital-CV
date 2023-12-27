@@ -19,10 +19,10 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: yarn install
+        run: sudo yarn install
 
       - name: Build project
-        run: yarn build
+        run: sudo yarn build
 
       - name: Commit changes
         run: |

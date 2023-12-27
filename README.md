@@ -9,7 +9,12 @@ This is CV project of Siarhei Filinski ([Linked In](https://www.linkedin.com/in/
 
 ## Features 
 
-The tool allows to build and host my CV as website, while also rendering PDF version.
+The tool allows to:
+- create CV using modern frontend technology
+  - build and host CV as website
+  - render CV as PDF from the same code
+  - develop both versions locally using dev tools with hot reload
+- maintain several CV versions simultaneously
 
 The tech tool is based on:
 - Typescript
@@ -30,13 +35,32 @@ Web version is also aimed to responsively support mobile.
 To run local dev server run:
 
 ```bash
-npm run dev
+npm run dev -- --variant=base
 ```
+
+`variant` option allows to specify which variant should be built and hosted. In example below, it will try to
+use CV variant located in `src/variants/base`.
 
 It will be available on http://localhost:8080 and hot reloaded whenever you change files in `/src`.
 
 Also, `.pdf` version will be created and can be found in `/dist`.
 
+## Releasing
+
+When new commits are added to `main`, two things will happen automatically:
+- `main` will be auto-merged into `release` branch
+- `release` branch will build and commit output on top of the branch
+
+Since build output goes into `docs` folder, GitHub Pages will pick it up automatically and update hosted website.
+
+## Maintaining multiple versions
+
+It's possible to have several CV variants that are being developed in parallel. To allow that, there is `src/variants` 
+folder, each directory in which is considered separate CV versions, that can be developed and built separately.
+
+Each variant is minimally required to have `index.ts` and `index.html` files.
+
+Variant that should be used for production hosting should be specified in `src/variants/hosted-variant.config.js`;
 
 ## Additional notes:
 

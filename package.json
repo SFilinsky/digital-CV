@@ -7,6 +7,7 @@
     "url": "https://www.linkedin.com/in/sergey-filinsky/"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "css-modules-typescript-loader": "^4.0.1",
     "html-loader": "^4.2.0",
@@ -14,6 +15,7 @@
     "mini-css-extract-plugin": "^2.7.6",
     "nodemon": "^3.0.1",
     "puppeteer": "^21.5.2",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
@@ -21,10 +23,12 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
-    "webpack-merge": "^5.10.0"
+    "webpack-merge": "^5.10.0",
+    "yargs": "^17.7.2",
+    "@types/yargs": "^17.0.32"
   },
   "scripts": {
-    "dev": "node builds/scripts/dev.js",
-    "build": "webpack --config=builds/webpack/prod.config.js"
+    "dev": "cross-env ./builds/scripts/tools.js dev",
+    "build": "cross-env ./builds/scripts/tools.js prod"
   }
 }

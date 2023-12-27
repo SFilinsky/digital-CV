@@ -6,6 +6,8 @@ const RENDER_WIDTH = 1240;
 
 (async () => {
 
+  const isDevelopment = process.env.NODE_ENV === 'development';
+
   const browser = await puppeteer.launch({
     headless: true,
     defaultViewport: {
@@ -31,7 +33,7 @@ const RENDER_WIDTH = 1240;
   //   height: scrollDimension.height
   // });
 
-  const outDir = path.join(process.cwd(), 'dist');
+  const outDir = isDevelopment ? path.join(process.cwd(), 'dist') : path.join(process.cwd(), 'docs');
   const outFile = path.join(outDir, 'Siarhei Filinski CV.pdf');
 
   console.log(`Cleaning ${outFile} (if exists).`);

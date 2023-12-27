@@ -1,6 +1,4 @@
-@import './styles/fonts.scss';
-@import './styles/variables.scss';
-@import "./styles/breakpoints.scss";
+@import "../../common/common.scss";
 
 :root {
     font-family: var(--main-font-family);

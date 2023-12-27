@@ -22,5 +22,5 @@ jobs:
           git checkout main
           git merge -s ours origin/release
           git checkout release
-          git merge origin/main -m -m "Updating release using latest master"
+          git merge origin/main -m "Updating release using latest master"
           git push origin release
